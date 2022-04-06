@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+main{
+  height: 100vh;
+
+  /*Centralizando Toogle*/ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.toogle {
+  width: 20%;
+  background-color: var(--label);
+  border-radius: 60px;
+} 
+
+.ball {
+  border-radius: 50px;
+  background-color: #fff;
+}
