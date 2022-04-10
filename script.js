@@ -7,5 +7,3 @@ checkbox.addEventListener('change', () => {
     document.body.style.backgroundColor = '#F1F1F1'
   }
 })
-
-
