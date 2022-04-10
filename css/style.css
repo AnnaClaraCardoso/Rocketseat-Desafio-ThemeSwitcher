@@ -10,22 +10,35 @@
 	--label: #111;
 }
 
-main{
-  height: 100vh;
+body {
+  background-color: var(--dark);
+}
 
-  /*Centralizando Toogle*/ 
+main {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
-.toogle {
-  width: 20%;
+.form-switch .form-check-input:checked {
+  background-image: url("/assets/download.svg"), url("/assets/moon.svg");
+  background-position: right center, 4% 50%;
+}
+
+.form-switch .form-check-input {
+  width: 8em;
+  height: 4em;
+  margin-left: -2.5em;
+  background-image: url("/assets/download.svg"), url("/assets/sun.svg");
+  background-position: left center, 95% 50%;
+  background-size: 4em, 3em;
+  border-radius: 2em;
+  transition: background-position .15s ease-in-out;
+}
+
+.form-check-input {
   background-color: var(--label);
-  border-radius: 60px;
-} 
-
-.ball {
-  border-radius: 50px;
-  background-color: #fff;
+  background-repeat: no-repeat;
+  appearance: none;
 }
